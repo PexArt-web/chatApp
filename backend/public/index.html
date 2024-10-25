@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css">
+    <title>chat app</title>
+  </head>
+  <body>
+    <h1 class="title">Pex Chat</h1>
+    <div class="main">
+      <div class="name">
+        <span><i class="far fa-user"></i></span>
+        <input
+          type="text"
+          class="name-input"
+          id="name-input"
+          value="anonymous"
+          maxlength="20"
+        />
+      </div>
+      <ul class="message-container" id="message-container">
+        <!-- message left -->
+        <li class="message-left">
+          <p class="message">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
+            obcaecati molestiae at fuga hic aliquam, nulla provident, tempora
+            deserunt ut vitae perspiciatis voluptates beatae natus amet
+            exercitationem eos cupiditate iure.
+            <span>bluebird 25 October 10:40</span>
+          </p>
+        </li>
+        <!-- message right -->
+        <li class="message-left">
+          <p class="message">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
+            obcaecati molestiae at fuga hic aliquam, nulla provident, tempora
+            deserunt ut vitae perspiciatis voluptates beatae natus amet
+            exercitationem eos cupiditate iure.
+            <span>bluebird 25 October 10:40</span>
+          </p>
+        </li>
+
+        <li class="message-feedback">
+          <p class="feedback" id="feedback">Pex is typing a message</p>
+        </li>
+      </ul>
+      <form class="message-form" id="message-form">
+        <input
+          type="text"
+          name="message"
+          id="message-input"
+          class="message-input"
+        />
+        <div class="v-divider"></div>
+        <button type="submit" class="send-buttoon">
+          send <span><i class="fas fa-paper-plane"></i></span>
+        </button>
+      </form>
+      <h3 class="clients-total" id="clients-total">
+        Total clients: 2
+      </h3>
+    </div>
+  </body>
+</html>
