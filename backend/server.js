@@ -29,4 +29,9 @@ function onConnect(socket) {
         socket.broadcast.emit("message", data)
         log("received message", data)
     })
+
+    socket.on("publicFeedback", (data) =>{
+        log(data, "received public feedback")
+        socket.broadcast.emit("feedBack", data)
+    })
 }
