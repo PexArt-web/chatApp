@@ -73,7 +73,6 @@ messageInput.addEventListener("blur", (e) => {
 });
 
 socket.on("feedBack", (data) => {
-  console.log(data.feedback, 'client feedback');
   clearFeedback()
   const feedback = `
   
